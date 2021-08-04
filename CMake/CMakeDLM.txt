@@ -1,0 +1,8 @@
+CMake_CATS_Deuteron
+/home/sbhawani/Desktop/CATS_TUT_Deuteron
+/home/sbhawani/alice/sw/ubuntu1804_x86-64/ROOT/v6-16-00-1
+/home/sbhawani/gsl/gsl
+/home/sbhawani/gsl/cblas/.libs
+/home/sbhawani/CATS
+dev
+/home/sbhawani/Desktop/CATS_TUT_Deuteron/CMake/bin

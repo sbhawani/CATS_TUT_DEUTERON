@@ -2,14 +2,14 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 #It is recommended that you copy all CMake related files in a local folder of yours,
 #else whenever you pull/push there will be conflicts to resolve
 
-SET(PROJECT_NAME "CMake_CATS")
+SET(PROJECT_NAME "CMake_CATS_Deuteron")
 
 project(${PROJECT_NAME})
 # SET PATHS #
-SET(PROJECT_DESTINATION "/home/dmihaylov/Dudek_Ubuntu/Work/Kclus/GeneralFemtoStuff/CATS_TUTORIAL_2019")#the destination of your project
-SET(GSL_INCLUDE "/usr/include/gsl")#where are all GSL related .h files
-SET(GSL_LIB "/usr/lib")#where are the GSL .a and .so files
-SET(CATS_PATH "/home/dmihaylov/Apps/CATS")#the CATS main folder (containing cats-config)
+SET(PROJECT_DESTINATION "/home/sbhawani/Desktop/CATS_TUT_Deuteron")#the destination of your project
+SET(GSL_INCLUDE "/home/sbhawani/gsl/gsl")#where are all GSL related .h files
+SET(GSL_LIB "/home/sbhawani/gsl/cblas/.libs")#where are the GSL .a and .so files
+SET(CATS_PATH "/home/sbhawani/CATS")#the CATS main folder (containing cats-config)
 SET(CATS_TYPE "dev")#basic, extended or dev
 
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_DESTINATION}/CMake/bin)
@@ -19,6 +19,9 @@ add_executable(${PROJECT_NAME} ${PROJECT_DESTINATION}/main.cpp
 ${PROJECT_DESTINATION}/Basics.cpp
 ${PROJECT_DESTINATION}/ExtendedCk.cpp
 ${PROJECT_DESTINATION}/Worksheet.cpp
+${PROJECT_DESTINATION}/ProtonDeuteronCF_fromWFModel.cpp
+#${PROJECT_DESTINATION}/examples.cpp
+${PROJECT_DESTINATION}/TestCWFs.cpp
 )
 # DO NOT CHANGE THE REST #
 
